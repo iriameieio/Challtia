@@ -39,29 +39,27 @@
       </div>
 
       <div class="container hero__inner">
-        <p class="kicker">むかしむかし――</p>
-        <h1 class="hero__title">あなたの物語を<br>はじめませんか？</h1>
+  <div class="hero__text">
+    <p class="kicker">むかしむかし――</p>
+    <h1 class="hero__title">あなたの物語を<br>はじめませんか？</h1>
 
-        <div class="story">
-          <p>それぞれの人生に、まだ名前のついていない物語がありました。</p>
-          <p>私たちは、<strong>童話×動物モチーフ</strong>の世界観を大切にする事務所です。</p>
-          <p>誰しもが人生のヒロインであり、その人だけの輝きと物語を持っています。</p>
-          <p>ここで生まれるのは、短いお話ではありません。ページを重ね、何年も続いていく、あなただけの物語。</p>
-          <p>さあ、物語の扉を開きましょう。</p>
-        </div>
+    <div class="story">
+      <p>それぞれの人生に、まだ名前のついていない物語がありました。</p>
+      <p>私たちは、童話×動物モチーフの世界観を大切にする事務所です。</p>
+      <p>誰しもが人生のヒロインであり、その人だけの輝きと物語を持っています。</p>
+      <p>ここで生まれるのは、短いお話ではありません。ページを重ね、何年も続いていく、あなただけの物語。</p>
+      <p>さあ、物語の扉を開きましょう。</p>
+    </div>
 
-        <div class="hero__cta">
-          <a class="btn" href="#members">物語の扉を開く</a>
-          <a class="btn btn--ghost" href="https://booth.pm/" target="_blank" rel="noopener">Booth</a>
-        </div>
+    <div class="hero__cta">
+      <a class="btn" href="#members">物語の扉を開く</a>
+    </div>
+  </div>
 
-        <div class="hero__seal" aria-hidden="true">
-          <div class="seal">
-            <span class="seal__paw">🐾</span>
-            <span class="seal__text">Fairy Tale</span>
-          </div>
-        </div>
-      </div>
+  <div class="hero__logo">
+    <img src="./assets/img/logo.png" alt="Challtia">
+  </div>
+</div>
 
       <!-- 本のカーブ -->
       <div class="book-curve" aria-hidden="true"></div>
@@ -75,13 +73,20 @@
           <p class="section__sub">カードをタップするとプロフィール（4枚目）へ</p>
         </div>
 
-        <div class="member-grid" id="memberGrid"></div>
+        <div class="generation-block">
+  <h3 class="generation-title">Narrator</h3>
+  <div class="member-grid" id="narratorGrid"></div>
+</div>
 
-        <div class="booth-area">
-          <a class="btn btn--wide" href="https://booth.pm/" target="_blank" rel="noopener">
-            Booth
-          </a>
-        </div>
+<div class="generation-block">
+  <h3 class="generation-title">1期生</h3>
+  <div class="member-grid" id="gen0Grid"></div>
+</div>
+
+<div class="generation-block">
+  <h3 class="generation-title">2期生</h3>
+  <div class="member-grid" id="gen1Grid"></div>
+</div>
       </div>
     </section>
 

@@ -7,11 +7,11 @@
   <meta name="description" content="所属ライバーのプロフィールページ" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
+
   <header class="header">
     <a class="brand" href="./index.html" aria-label="トップへ">
-      <span class="brand__mark" aria-hidden="true">⌁</span>
-      <span class="brand__name">Fairy Tale Agency</span>
       <span class="brand__sub">IRIAMタレント事務所</span>
     </a>
 
@@ -23,12 +23,26 @@
 
   <main class="section">
     <div class="container">
+
       <div class="profile" id="profile"></div>
+
+      <section class="subgallery">
+        <h2 class="subgallery__title">サブ画像</h2>
+
+        <div class="subgallery__grid" id="subGrid"></div>
+
+        <div class="subgallery__loader" id="subLoader">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
     </div>
   </main>
 
   <footer class="footer">
-    <small>© Fairy Tale Agency</small>
+    <small>© IRIAMタレント事務所</small>
   </footer>
 
   <script src="./assets/js/app.js"></script>

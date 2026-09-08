@@ -1,0 +1,221 @@
+ [
+ {
+   "id": "narrator1",
+    "group": "narrator",
+    "name": "梅野ことり",
+    "roman": "UMENOKOTORI",
+    "motif": "輝夜姫×ウグイス",
+    "catch": "",
+    "img": "./assets/img/members/umeno1.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "輝夜姫×ウグイス",
+      "ファンネーム": "ふぁーまぁ",
+      "誕生日": "5月15日",
+      "身長": "155cm",
+      "夢": "世界に楽しいを届け続ける事"
+    },
+    "x": "https://x.com/umenokotori?s=21",
+    "iriam": "https://web.iriam.app/s/user/O2o45pfeBU?uuid=f4300ebb",
+    "youtube": "https://youtube.com/@umenokotori?si=hCwWC67yJZrH508F"
+  },
+
+  {
+    "id": "narrator2",
+    "group": "narrator",
+    "name": "雪白りんか",
+    "roman": "YUKISHIRO RINKA",
+    "motif": "カラス×イーヴィルクイーン",
+    "catch": "",
+    "img": "./assets/img/members/Yukishiro.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "カラス×イーヴィルクイーン",
+      "ファンネーム": "こびとさん",
+      "誕生日": "12/16",
+      "身長": "163",
+      "夢": "世界で1番可愛くてきらきらなでっかい魔法使い！"
+    },
+    "x": "https://x.com/yukishiro_rinka?s=21",
+    "iriam": "https://web.iriam.app/s/user/n3nLGPU9mC?uuid=11a6fd54",
+    "youtube": "https://youtube.com/@rinkayukishiro?si=ZybXV_LMUsXuYDE0"
+  },
+
+  {
+    "id": "gen0_1",
+    "group": "gen0",
+    "name": "天針める",
+    "roman": "AMAHARI MELU",
+    "motif": "ナイチンゲール×羊（ちょっぴり天使）",
+    "catch": "",
+    "img": "./assets/img/members/meru.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "ナイチンゲール×羊（ちょっぴり天使）",
+      "ファンネーム": "あまめる㌠",
+      "誕生日": "10月4日（天使の日）",
+      "身長": "165cm（ヒール込み）",
+      "夢": "天針として長生きすること。何年経っても「そんな羊いたな〜」ってふいに思い出してもらうこと。"
+    },
+    "x": "https://x.com/amahari_melu_",
+    "iriam": "https://web.iriam.app/s/user/9AnGMngcMB?uuid=f6594f69",
+    "youtube": "https://youtube.com/@amaharimelu"
+  },
+
+  {
+    "id": "gen0_2",
+    "group": "gen0",
+    "name": "犬井ももか",
+    "roman": "INUI MOMOKA",
+    "motif": "田舎訛りのしばいぬ×ブレーメンの音楽隊",
+    "catch": "",
+    "img": "./assets/img/members/inui.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "田舎訛りのしばいぬ×ブレーメンの音楽隊",
+      "ファンネーム": "わんでるず",
+      "誕生日": "5/28",
+      "身長": "155cm（耳込み、ヒール抜き）",
+      "夢": "Live2D実装、いぬいぬいぐるみ化"
+    },
+    "x": "https://x.com/mmk_inui05",
+    "iriam": "https://web.iriam.app/s/user/5F7qwfVThB?uuid=c5a59dff",
+    "youtube": ""
+  },
+
+  {
+    "id": "gen0_3",
+    "group": "gen0",
+    "name": "蒼空織クロノ",
+    "roman": "SORAORI CHRONO",
+    "motif": "オオカミ×星の王子さま",
+    "catch": "",
+    "img": "./assets/img/members/kurono.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "オオカミ×星の王子さま",
+      "ファンネーム": "Royal Guard",
+      "誕生日": "5月30日",
+      "身長": "167cm(ヒール込)",
+      "夢": "誰よりもかっこいい女性になること"
+    },
+    "x": "https://x.com/Soraori_Chrono",
+    "iriam": "https://web.iriam.app/s/user/gjkqixcSSH?uuid=95056748",
+    "youtube": "https://youtube.com/@chrono_sky?si=YvBZMhDZcU8Pu6Jj"
+  },
+
+  {
+    "id": "gen1_1",
+    "group": "gen1",
+    "name": "雪乃宮るりぃ",
+    "roman": "Yukinomiya Rurili",
+    "motif": "ユキヒョウ×不思議の国のアリス",
+    "catch": "",
+    "img": "./assets/img/members/ruri.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "ユキヒョウ×不思議の国のアリス",
+      "ファンネーム": "もふりぃす",
+      "誕生日": "4月29日",
+      "身長": "150cm（耳込み）",
+      "夢": "夢はライブすること！目標は誰かの居場所になれるようなアイドルになること！"
+    },
+    "x": "https://x.com/rurili__alice?s=21&t=AmnAWffjLfpcqjD-k590RA",
+    "iriam": "https://web.iriam.app/s/user/6BOSzeuMuv?uuid=54d26488",
+    "youtube": "https://youtube.com/@rurili_yukinomiya?si=nvQen2Q7dzciFcS-"
+  },
+
+  {
+    "id": "gen1_2",
+    "group": "gen1",
+    "name": "愛兎せつな",
+    "roman": "Heart Setsuna",
+    "motif": "ハートの女王×うさぎ",
+    "catch": "",
+    "img": "./assets/img/members/setuna.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "ハートの女王×うさぎ",
+      "ファンネーム": "Royal Rabbit(ロイヤルラビット)",
+      "誕生日": "９月１６日",
+      "身長": "145cm(うさ耳含む)",
+      "夢": "みんなが元気をもらえるような配信者になること！"
+    },
+    "x": "https://x.com/setsuna_heart",
+    "iriam": "https://web.iriam.app/s/user/6Zbdxorqpp?uuid=a8489a0c",
+    "youtube": ""
+  },
+
+  {
+    "id": "gen1_3",
+    "group": "gen1",
+    "name": "虎伏 なつめ",
+    "roman": "NATSUME KOBUSHI",
+    "motif": "ホワイトタイガー×ハーメルンの笛吹き",
+    "catch": "",
+    "img": "./assets/img/members/natume.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "ホワイトタイガー×ハーメルンの笛吹き",
+      "ファンネーム": "パレードの参列者",
+      "誕生日": "4月4日",
+      "身長": "160cm",
+      "夢": "末永く緩くパレード(配信)を続ける"
+    },
+    "x": "https://x.com/Natsume_Kobushi",
+    "iriam": "https://web.iriam.app/s/user/ifhWvCdLoe?uuid=2c3fc942",
+    "youtube": "https://youtube.com/channel/UC532IvFRzm_oU8zYsgYr-jA?si=55XElB4dHUy3Y57y"
+  },
+
+  {
+    "id": "gen1_4",
+    "group": "gen1",
+    "name": "メェ･ィプ",
+    "roman": "MAE YIP",
+    "motif": "眠り姫×しろやぎ",
+    "catch": "",
+    "img": "./assets/img/members/meipu.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "眠り姫×しろやぎ",
+      "ファンネーム": "めぃぷるず",
+      "誕生日": "3/28",
+      "身長": "156cm",
+      "夢": "ｵﾘﾌﾟﾁ実装、オリ背実装、Sキープ、live2dなど"
+    },
+    "x": "https://x.com/meeipuru111",
+    "iriam": "https://web.iriam.app/s/user/a7KqZEIJeV?uuid=88e982ad",
+    "youtube": "https://youtube.com/@meeipuru111?si=k_hxIcM2oqKd1RYr"
+  },
+
+  {
+    "id": "gen1_5",
+    "group": "gen1",
+    "name": "狐乃 ゆり",
+    "roman": "KONO YURI",
+    "motif": "狐×ラプンツェル",
+    "catch": "",
+    "img": "./assets/img/members/yuri.png",
+    "subImages": [],
+    "bio": "",
+    "meta": {
+      "モチーフ": "狐×ラプンツェル",
+      "ファンネーム": "ゆりっ狐",
+      "誕生日": "8月28日",
+      "身長": "153",
+      "夢": "皆に歌を聞いてもらう事"
+    },
+    "x": "https://x.com/konoyuri_1?s=21",
+    "iriam": "https://web.iriam.app/s/user/22ZJKfdrlj?uuid=2dc76ab9",
+    "youtube": ""
+}
+]

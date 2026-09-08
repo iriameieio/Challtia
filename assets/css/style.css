@@ -100,54 +100,197 @@ strong{font-weight:900;}
   box-shadow: 0 -10px 0 rgba(74,58,52,0.02);
 }
 
-/* MEMBERS */
+.hero__inner{
+  min-height:620px;
+  padding:74px 0 80px;
+  display:grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero__text{
+  position:relative;
+  z-index:2;
+}
+
+.hero__logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  z-index:2;
+}
+
+.hero__logo img{
+  width:min(360px, 80%);
+  height:auto;
+  display:block;
+  filter:drop-shadow(0 18px 26px rgba(229,138,146,.16));
+}
+
+@media (max-width: 900px){
+  .hero__inner{
+    grid-template-columns:1fr;
+    gap:30px;
+    text-align:center;
+  }
+
+  .story{
+    margin:0 auto;
+  }
+
+  .hero__cta{
+    justify-content:center;
+  }
+
+  .hero__logo img{
+    width:min(260px, 70%);
+  }
+}
+
+/* =========================
+   MEMBERS / BUBBLE風
+========================= */
+
 .member-grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:18px;
+  gap:28px;
+  align-items:stretch;
 }
+
 .member-card{
-  background:rgba(255,255,255,.80);
-  border:1px solid var(--border);
-  border-radius: var(--r-xl);
-  box-shadow: var(--shadow);
+  background:#fff;
+  border:1px solid rgba(229,138,146,.16);
+  border-radius:32px;
   overflow:hidden;
-  display:flex;flex-direction:column;
-  cursor:pointer;
-  transition: transform .15s ease, box-shadow .15s ease;
+  display:flex;
+  flex-direction:column;
+  min-height:680px;
+
+  box-shadow:none;
 }
-.member-card:hover{transform: translateY(-2px);box-shadow: 0 18px 45px rgba(74,58,52,.12);}
+
+.member-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 52px rgba(74,58,52,.12);
+}
 
 .member-card__img{
-  aspect-ratio: 4/3;
-  background:linear-gradient(135deg, rgba(229,138,146,.18), rgba(246,193,198,.18));
-  display:flex;align-items:center;justify-content:center;
+  height:560px;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255,255,255,.9) 0 42px, transparent 43px),
+    radial-gradient(circle at 85% 20%, rgba(246,193,198,.35) 0 38px, transparent 39px),
+    linear-gradient(180deg, #fdf2f4 0%, #fff8fa 100%);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:24px 20px 10px;
   position:relative;
+  overflow:hidden;
 }
+
 .member-card__img::after{
   content:"";
-  position:absolute; inset:10px;
-  border-radius:22px;
+  position:absolute;
+  inset:14px;
+  border-radius:26px;
   border:1px dashed rgba(229,138,146,.35);
   pointer-events:none;
 }
-.member-card__img img{width:100%;height:100%;object-fit:cover;display:block;}
 
-.member-card__body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:10px;}
-.member-card__name{font-size:18px;font-weight:950;margin:0;}
-.member-card__meta{font-size:12px;color:var(--muted);margin:0;line-height:1.6;}
-.member-card__sns{display:flex;gap:10px;margin-top:auto;}
-.icon-btn{
-  width:40px;height:40px;border-radius:999px;
-  display:inline-flex;align-items:center;justify-content:center;
-  border:1px solid var(--border);
-  background:#fff;
-  box-shadow: 0 10px 18px rgba(74,58,52,.06);
-  color:var(--muted);
-  font-weight:900;
+.member-card__img img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  display:block;
+  position:relative;
+  z-index:2;
 }
 
-.booth-area{display:flex;justify-content:center;margin-top:22px;}
+.member-card__body{
+  flex:1;
+  padding:22px 22px 26px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:8px;
+  background:#fff;
+}
+
+.member-card__name{
+  margin:0;
+  font-size:24px;
+  font-weight:950;
+  line-height:1.35;
+  color:var(--ink);
+}
+
+.member-card__meta{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+
+.generation-block{
+  margin-top:64px;
+}
+
+.generation-block:first-of-type{
+  margin-top:0;
+}
+
+.generation-title{
+  font-size:34px;
+  font-weight:950;
+  margin:0 0 26px;
+  color:var(--ink);
+  letter-spacing:.04em;
+}
+
+.generation-title::after{
+  content:"";
+  display:block;
+  width:90px;
+  height:4px;
+  background:linear-gradient(90deg, var(--pink-main), var(--pink-soft));
+  border-radius:999px;
+  margin-top:10px;
+}
+
+.booth-area{
+  display:flex;
+  justify-content:center;
+  margin-top:22px;
+}
+
+@media (max-width: 1000px){
+  .member-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px){
+  .member-grid{
+    grid-template-columns:1fr;
+  }
+
+  .member-card{
+    min-height:auto;
+  }
+
+  .member-card__img{
+    height:500px;
+  }
+
+  .member-card__name{
+    font-size:22px;
+  }
+}
 
 /* ABOUT */
 .about{
@@ -200,49 +343,462 @@ strong{font-weight:900;}
 /* FOOTER */
 .footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid var(--border);background:rgba(255,248,242,.75);}
 
-/* PROFILE PAGE */
-.profile{
-  display:grid;grid-template-columns: .42fr .58fr;gap:18px;align-items:start;
-}
-.profile__img{
-  background:#fff;border:1px solid var(--border);border-radius: var(--r-xl);
-  box-shadow: var(--shadow);overflow:hidden;
-}
-.profile__img img{width:100%;height:auto;display:block;}
-.profile__main{
-  background:#fff;border:1px solid var(--border);border-radius: var(--r-xl);
-  box-shadow: var(--shadow);padding:18px;
-}
-.profile__name{margin:0;font-size:30px;font-weight:950;}
-.profile__roman{margin:6px 0 14px;color:var(--muted);font-weight:850;}
-.profile__bio{margin:0 0 14px;color:var(--muted);line-height:1.95;}
-.dl{
-  display:grid;grid-template-columns: 110px 1fr;
-  gap:10px 12px;border-top:1px solid var(--border);padding-top:14px;margin-top:14px;
-}
-.dl dt{color:var(--muted);font-weight:950;}
-.dl dd{margin:0;font-weight:850;}
-.profile__sns{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;}
+/* ================================
+   PROFILE PAGE  OPEN BOOK
+================================ */
 
-/* responsive */
-@media (max-width: 900px){
-  .member-grid{grid-template-columns: repeat(2,1fr);}
-  .feature-grid{grid-template-columns: 1fr;}
-  .about{grid-template-columns: 1fr;}
-  .profile{grid-template-columns: 1fr;}
-  .hero__title{font-size:46px;}
+.profile{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 760px;
+
+  border: 1px solid rgba(74,58,52,.08);
+  box-shadow: inset -24px 0 34px rgba(0,0,0,.03);
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.96) 0%,
+      rgba(255,255,255,.96) 48.5%,
+      rgba(255,255,255,.96) 51.5%,
+      rgba(255,255,255,.96) 100%
+    );
+
+  /* 開いた本の形 */
+  clip-path: polygon(
+    0% 7%,
+    8% 4%,
+    20% 3%,
+    34% 4%,
+    45% 6%,
+    48% 7.2%,
+    50% 9%,
+    52% 7.2%,
+    55% 6%,
+    66% 4%,
+    80% 3%,
+    92% 4%,
+    100% 7%,
+    100% 93%,
+    92% 96%,
+    80% 97%,
+    66% 96%,
+    55% 94%,
+    52% 92.8%,
+    50% 91%,
+    48% 92.8%,
+    45% 94%,
+    34% 96%,
+    20% 97%,
+    8% 96%,
+    0% 93%
+  );
 }
-@media (max-width: 680px){
-  .nav{display:none;}
-  .hamburger{display:block;}
-  .nav.is-open{
-    display:flex;position:absolute;right:12px;top:62px;
-    flex-direction:column;gap:10px;
-    background:rgba(255,255,255,.92);
-    border:1px solid var(--border);border-radius:18px;
-    padding:12px;box-shadow: var(--shadow);
+
+/* 真ん中の線：細く・ぼかしなし */
+.profile::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:50%;
+  width: 3px;
+  transform:translateX(-50%);
+  background: rgba(229,138,146,0.25); 
+  z-index:2;
+  pointer-events:none;
+}
+
+/* 紙のやわらかい光 */
+.profile::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse at top center, rgba(255,255,255,.45) 0%, transparent 16%),
+    radial-gradient(ellipse at bottom center, rgba(255,255,255,.28) 0%, transparent 16%);
+  z-index:1;
+  pointer-events:none;
+}
+
+.profile__img,
+.profile__main{
+  position:relative;
+  z-index:3;
+  min-height:100%;
+  background:transparent;
+}
+
+/* 左ページ */
+.profile__img{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding:30px 20px 30px 34px;
+  border-right:1px solid rgba(74,58,52,.05);
+  box-shadow: inset -24px 0 34px rgba(0,0,0,.03);
+}
+
+.profile__img img{
+  width:100%;
+  max-width:520px;
+  max-height:700px;
+  object-fit:contain;
+  display:block;
+}
+
+/* 画像右下の @challtia. */
+.profile__credit{
+  position:absolute;
+  right:30px;
+  bottom:100px;
+  margin:0;
+  font-size:22px;
+  font-weight:900;
+  color:#111;
+  letter-spacing:.02em;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
+  transform:none;
+}
+
+/* 右ページ */
+.profile__main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:40px 42px 40px 24px;
+  border-left:1px solid rgba(74,58,52,.05);
+  box-shadow: inset 24px 0 34px rgba(0,0,0,.03);
+  text-align:center;
+}
+
+.profile__name{
+  margin:0;
+  font-size:32px;
+  font-weight:950;
+  line-height:1.3;
+  text-align:center;
+}
+
+.profile__roman{
+  margin:8px 0 12px;
+  color:var(--muted);
+  font-weight:850;
+  text-align:center;
+}
+
+.profile__bio-wrap{
+  margin:12px 0 18px;
+  display:flex;
+  justify-content:center;
+}
+
+.profile__bio{
+  margin:0;
+  width:88%;
+  line-height:1.95;
+  color:var(--muted);
+  text-align:center;
+}
+
+/* プロフィール表 */
+.dl{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:12px 14px;
+  border-top:1px solid var(--border);
+  padding-top:18px;
+  margin-top:12px;
+  align-items:center;
+}
+
+.dl dt{
+  font-weight:900;
+  color:var(--muted);
+  text-align:center;
+}
+
+.dl dd{
+  margin:0;
+  font-weight:850;
+  line-height:1.8;
+  word-break:break-word;
+  text-align:center;
+}
+
+/* SNS */
+.profile__sns{
+  margin-top:24px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* ボイス */
+.profile__voice{
+  margin-top:26px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  text-align:center;
+}
+
+.profile__voice-title{
+  margin:0 0 12px;
+  font-size:20px;
+  font-weight:900;
+  text-align:center;
+}
+
+.profile__voice-btn{
+  background:var(--pink-main);
+  border:none;
+  padding:12px 20px;
+  border-radius:999px;
+  color:white;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:var(--shadow-soft);
+}
+
+.profile__voice-btn:hover{
+  opacity:.9;
+}
+
+/* モバイル */
+@media (max-width: 900px){
+  .profile{
+    grid-template-columns:1fr;
+    min-height:auto;
+    clip-path:none;
   }
-  .member-grid{grid-template-columns: 1fr;}
-  .section__title{font-size:34px;}
-  .hero__title{font-size:40px;}
+
+  .profile::before{
+    display:none;
+  }
+
+  .profile__img,
+  .profile__main{
+    min-height:auto;
+  }
+
+  .profile__img{
+    padding:24px 20px 16px;
+    border-right:none;
+    box-shadow:none;
+  }
+
+  .profile__main{
+    padding:20px 20px 28px;
+    border-left:none;
+    box-shadow:none;
+  }
+
+  .profile__img img{
+    max-height:560px;
+  }
+
+  .profile__credit{
+    right:18px;
+    bottom:18px;
+    font-size:18px;
+  }
+
+  .profile__bio{
+    width:100%;
+  }
+}
+
+/* =========================================================
+   最終修正版
+   1. プロフィール本の中央部分のぼかし・影を削除
+   2. 期生ごとの一覧を顔だけのドアップ表示に変更
+========================================================= */
+
+/* ---------- 1. 本の中央部分をくっきり表示 ---------- */
+
+.profile::after{
+  display:none;
+}
+
+.profile::before{
+  top:7%;
+  bottom:7%;
+  width:1px;
+  background:rgba(229,138,146,.32);
+  box-shadow:none;
+  filter:none;
+}
+
+.profile__img{
+  border-right:none;
+  box-shadow:none;
+}
+
+.profile__main{
+  border-left:none;
+  box-shadow:none;
+}
+
+.profile{
+  box-shadow:0 14px 35px rgba(74,58,52,.10);
+  background:#fffdfb;
+}
+
+
+/* ---------- 2. メンバー一覧を顔だけドアップ表示 ---------- */
+
+.member-grid{
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:28px 20px;
+}
+
+.member-card{
+  min-height:auto;
+  align-items:center;
+  padding:18px 14px 20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid rgba(74,58,52,.08);
+  border-radius:24px;
+  box-shadow:0 10px 24px rgba(74,58,52,.08);
+}
+
+.member-card__img{
+  width:190px;
+  height:190px;
+  flex:none;
+  border-radius:50%;
+  overflow:hidden;
+  padding:0;
+  background:linear-gradient(
+    135deg,
+    rgba(229,138,146,.18),
+    rgba(246,193,198,.24)
+  );
+  box-shadow:0 8px 20px rgba(74,58,52,.10);
+  display:block;
+}
+
+.member-card__img::after{
+  display:none;
+}
+
+/* 顔だけを大きく表示 */
+.member-card__img img{
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:cover;
+  object-position:center 10%;
+  transform:scale(1.95);
+  transform-origin:center top;
+  display:block;
+}
+
+.member-card__body{
+  width:100%;
+  padding:16px 6px 0;
+  align-items:center;
+  text-align:center;
+  gap:7px;
+  background:transparent;
+}
+
+.member-card__name{
+  margin:0;
+  font-size:18px;
+  line-height:1.4;
+}
+
+.member-card__meta{
+  margin:0;
+  text-align:center;
+  font-size:13px;
+}
+
+.member-card__sns{
+  justify-content:center;
+}
+
+@media (max-width:1000px){
+  .member-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+  }
+
+  .member-card__img{
+    width:170px;
+    height:170px;
+  }
+}
+
+@media (max-width:680px){
+  .member-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:20px 12px;
+  }
+
+  .member-card{
+    padding:14px 8px 16px;
+  }
+
+  .member-card__img{
+    width:145px;
+    height:145px;
+  }
+
+  .member-card__img img{
+    transform:scale(2);
+  }
+
+  .member-card__name{
+    font-size:15px;
+  }
+
+  .member-card__meta{
+    font-size:11px;
+  }
+}
+
+/* =========================================
+   ライバーページ：立ち絵に透かし素材を重ねる
+   ========================================= */
+
+/* 立ち絵エリア */
+.profile__img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 透かし素材を立ち絵の上に表示 */
+.profile__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* 立ち絵本体 */
+.profile__img img {
+  position: relative;
+  z-index: 3;
+}
+
+/* スマホでも透かしを立ち絵エリアに合わせる */
+@media (max-width: 900px) {
+  .profile__img::after {
+    background-size: 100% 100%;
+    opacity: 0.35;
+  }
 }
